@@ -1,4 +1,5 @@
 <script lang="ts">
+  import TodoFilterList from "./lib/TodoFilterList.svelte";
   import TodoInput from "./lib/TodoInput.svelte";
 </script>
 
@@ -8,5 +9,6 @@
       Svelte TodoAPP
     </h1>
     <TodoInput />
+    <TodoFilterList />
   </div>
 </main>

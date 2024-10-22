@@ -13,8 +13,8 @@ const createTodoStore = () => {
     subscribe,
     addTodo: (text: string) =>
       update((todos) => [
-        ...todos,
         { id: `${todos.length}-${Date.now()}`, text, completed: false },
+        ...todos,
       ]),
     toggleTodo: (id: string) =>
       update((todos) =>
