@@ -13,6 +13,7 @@
   <div class="flex items-center gap-x-2">
     <input
       type="checkbox"
+      checked={todo.completed}
       on:change={() => todos.toggleTodo(todo.id)}
       class="border-none outline-none rounded-md"
     />

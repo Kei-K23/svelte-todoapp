@@ -22,6 +22,10 @@ const createTodoStore = () => {
           todo.id === id ? { ...todo, completed: !todo.completed } : todo
         )
       ),
+    makeAllComplete: () =>
+      update((todos) => todos.map((todo) => ({ ...todo, completed: true }))),
+    makeUnComplete: () =>
+      update((todos) => todos.map((todo) => ({ ...todo, completed: false }))),
     removeTodo: (id: string) =>
       update((todos) => todos.filter((todo) => todo.id !== id)),
     clearAllCompleted: () =>
